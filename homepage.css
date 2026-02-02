@@ -1,0 +1,120 @@
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* ---------- HEADER ---------- */
+.header-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #f4f4f4;
+}
+
+.search-bar {
+    width: 150%;
+    padding: 6px;
+    align-items:center;
+}
+
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ---------- NAV ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0;
+    background-color: #eaeaea;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* ---------- MEDIA SECTIONS ---------- */
+.media-section h1,
+.media-section h2,
+.media-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin: 30px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ---------- ROW LAYOUT (THIS IS THE KEY PART) ---------- */
+.media-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* responsive */
+    margin-bottom: 40px;
+}
+
+/* ---------- MEDIA CARD ---------- */
+.media-card {
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+.media-card img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.media-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* ---------- RANK ---------- */
+.rank {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+/* ---------- RATING BADGE ---------- */
+.rating-badge {
+    position: absolute;
+    bottom: 40px;
+    right: 12px;
+    background-color: rgb(1, 65, 1);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 10;
+}
+.media-card img {
+    width: 100%;
+    height: 400px;        /* choose the height you want */
+    object-fit: cover;   /* crops image to fill box */
+    border-radius: 8px;
+    display: block;
+}

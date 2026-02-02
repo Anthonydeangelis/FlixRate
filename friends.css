@@ -1,0 +1,94 @@
+/* ---------- FRIENDS PAGE ---------- */
+.friends-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ---------- HEADER ---------- */
+.friends-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.friends-header h1 {
+    text-transform: uppercase;
+}
+
+/* ---------- ADD FRIEND BUTTON ---------- */
+.add-friend {
+    padding: 10px 18px;
+    background-color: rgb(1, 65, 1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-friend:hover {
+    opacity: 0.9;
+}
+
+/* ---------- GRID ---------- */
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* ---------- FRIEND CARD ---------- */
+.friend-card {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ---------- AVATAR ---------- */
+.friend-avatar {
+    width: 70px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* ---------- TEXT ---------- */
+.friend-card h2 {
+    margin-bottom: 8px;
+}
+
+.friend-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ---------- STATUS ---------- */
+.status {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status.online {
+    color: green;
+}
+
+.status.offline {
+    color: gray;
+}
